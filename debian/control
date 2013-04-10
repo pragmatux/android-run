@@ -7,8 +7,9 @@ Standards-Version: 3.9.1
 
 Package: android-run
 Architecture: any
-Depends: ${misc:Depends}
+Depends: android, ${misc:Depends}
 Description: Service configuration for Android
- This package provides runit service configuration for Android. When
- installed, Android will automatically start. This assumes Android
- is in a chroot directory named /android. All we do is invoke Android's init.
+ This package provides systemd service configuration for Android. This
+ assumes Android is in a chroot directory named /android, and invokes
+ its init program. Android is installed as being wanted by the
+ graphical target.

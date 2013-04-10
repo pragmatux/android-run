@@ -1,9 +1,0 @@
-#!/bin/sh -e
-
-if [ "$1" = remove ]; then
-	runsvdir-remove android
-	rm -rf /etc/sv/android/supervise
-	rm -rf /etc/sv/android/log/supervise
-fi
-
-#DEBHELPER#

@@ -1,4 +1,0 @@
-#!/bin/sh
-LOG=/var/log/android
-test -d $LOG || mkdir -p $LOG
-exec svlogd -tt $LOG

@@ -1,0 +1,10 @@
+[Unit]
+Description=Android in a chroot
+
+[Service]
+ExecStart=/init
+RootDirectory=/android
+TimeoutStopSec=10s
+
+[Install]
+WantedBy=graphical.target
