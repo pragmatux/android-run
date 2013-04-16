@@ -1,3 +1,9 @@
+android-run (2.0) unstable; urgency=low
+
+  * Switch from runit to systemd
+
+ -- Ryan Kuester <rkuester@insymbols.com>  Tue, 16 Apr 2013 15:16:08 -0500
+
 android-run (1.0) unstable; urgency=low
 
   * Initial Release.
