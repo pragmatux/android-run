@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.4
 
 Package: android-run
-Architecture: any
+Architecture: all
 Depends: android, ${misc:Depends}
 Description: Service configuration for Android
  This package provides systemd service configuration for Android. This
