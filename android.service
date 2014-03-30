@@ -2,8 +2,10 @@
 Description=Android in a chroot
 
 [Service]
-ExecStart=/init
+ExecStartPre=/bin/mount --make-rslave rootfs / 
+RootDirectoryStartOnly=true
 RootDirectory=/android
+ExecStart=/init
 TimeoutSec=10s
 
 [Install]
